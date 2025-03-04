@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "dbt_schema_version": "https://schemas.getdbt.com/dbt/catalog/v1.json",
+    "dbt_version": "1.9.2",
+    "generated_at": "2025-03-03T21:30:50.044830Z",
+    "invocation_id": "2dd40161-c186-4e9a-a4e0-a5f2ce219e81",
+    "env": {}
+  },
+  "nodes": {
+    "model.insurance_analytics_demo.claims_transformed": {
+      "metadata": {
+        "type": "view",
+        "schema": "insurance_analytics_demo",
+        "name": "claims_transformed",
+        "database": "bq-dbt-omni-demo",
+        "comment": null,
+        "owner": null
+      },
+      "columns": {
+        "Claim_ID": {
+          "type": "INT64",
+          "index": 1,
+          "name": "Claim_ID",
+          "comment": null
+        },
+        "Member_ID": {
+          "type": "STRING",
+          "index": 2,
+          "name": "Member_ID",
+          "comment": null
+        },
+        "Service_Date": {
+          "type": "DATE",
+          "index": 3,
+          "name": "Service_Date",
+          "comment": null
+        },
+        "Provider": {
+          "type": "STRING",
+          "index": 4,
+          "name": "Provider",
+          "comment": null
+        },
+        "Service_Code": {
+          "type": "STRING",
+          "index": 5,
+          "name": "Service_Code",
+          "comment": null
+        },
+        "Amount_Billed": {
+          "type": "FLOAT64",
+          "index": 6,
+          "name": "Amount_Billed",
+          "comment": null
+        },
+        "Amount_Paid": {
+          "type": "FLOAT64",
+          "index": 7,
+          "name": "Amount_Paid",
+          "comment": null
+        },
+        "Member_Out_Of_Pocket": {
+          "type": "FLOAT64",
+          "index": 8,
+          "name": "Member_Out_Of_Pocket",
+          "comment": null
+        },
+        "Claim_Status": {
+          "type": "STRING",
+          "index": 9,
+          "name": "Claim_Status",
+          "comment": null
+        }
+      },
+      "stats": {
+        "has_stats": {
+          "id": "has_stats",
+          "label": "Has Stats?",
+          "value": false,
+          "include": false,
+          "description": "Indicates whether there are statistics for this table"
+        }
+      },
+      "unique_id": "model.insurance_analytics_demo.claims_transformed"
+    }
+  },
+  "sources": {},
+  "errors": null
+}

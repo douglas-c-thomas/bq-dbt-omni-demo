@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: claims_transformed
+    description: "A transformed version of claims data with additional calculated fields."
+    columns:
+      - name: Claim_ID
+        description: "Unique identifier for the claim"
+        tests:
+          - unique
+          - not_null
+
+      - name: Member_ID
+        description: "Unique identifier for the member associated with the claim"
+        tests:
+          - not_null
+
+      - name: Service_Date
+        description: "Date the service was provided"
+        tests:
+          - not_null
+
+      - name: Provider
+        description: "Healthcare provider associated with the claim"
+
+      - name: Service_Code
+        description: "The billing code for the procedure performed"
+
+      - name: Amount_Billed
+        description: "Total amount billed by the provider"
+
+      - name: Amount_Paid
+        description: "Total amount paid by the insurance"
+
+      - name: Member_Out_Of_Pocket
+        description: "Amount the member had to pay out of pocket"
+
+      - name: Claim_Status
+        description: "Current status of the claim (Completed, In Progress, Rejected)"

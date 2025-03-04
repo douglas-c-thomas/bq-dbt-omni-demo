@@ -1,0 +1,31 @@
+{
+  "_invocation_id": "2dd40161-c186-4e9a-a4e0-a5f2ce219e81",
+  "linked": {
+    "0": {
+      "name": "model.insurance_analytics_demo.claims_transformed",
+      "type": "model",
+      "succ": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "1": {
+      "name": "test.insurance_analytics_demo.unique_claims_transformed_Claim_ID.047f47d98a",
+      "type": "test"
+    },
+    "2": {
+      "name": "test.insurance_analytics_demo.not_null_claims_transformed_Claim_ID.0c001f1e51",
+      "type": "test"
+    },
+    "3": {
+      "name": "test.insurance_analytics_demo.not_null_claims_transformed_Member_ID.cfdb3c4b2d",
+      "type": "test"
+    },
+    "4": {
+      "name": "test.insurance_analytics_demo.not_null_claims_transformed_Service_Date.408cf029c3",
+      "type": "test"
+    }
+  }
+}
