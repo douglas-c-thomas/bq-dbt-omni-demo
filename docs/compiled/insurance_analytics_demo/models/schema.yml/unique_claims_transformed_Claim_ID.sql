@@ -4,9 +4,9 @@
 
 with dbt_test__target as (
 
-  select Claim_ID as unique_field
+  select claim_id as unique_field
   from `bq-dbt-omni-demo`.`insurance_analytics_demo`.`claims_transformed`
-  where Claim_ID is not null
+  where claim_id is not null
 
 )
 

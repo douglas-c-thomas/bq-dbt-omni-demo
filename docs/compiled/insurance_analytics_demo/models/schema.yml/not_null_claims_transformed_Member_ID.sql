@@ -4,8 +4,8 @@
 
 
 
-select Member_ID
+select member_id
 from `bq-dbt-omni-demo`.`insurance_analytics_demo`.`claims_transformed`
-where Member_ID is null
+where member_id is null
 
 

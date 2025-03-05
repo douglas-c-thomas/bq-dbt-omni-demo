@@ -4,8 +4,8 @@
 
 
 
-select Service_Date
+select service_date
 from `bq-dbt-omni-demo`.`insurance_analytics_demo`.`claims_transformed`
-where Service_Date is null
+where service_date is null
 
 
