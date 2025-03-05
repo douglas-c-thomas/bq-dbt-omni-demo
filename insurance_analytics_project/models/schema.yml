@@ -4,18 +4,18 @@ models:
   - name: claims_transformed
     description: "A transformed version of claims data with additional calculated fields."
     columns:
-      - name: Claim_ID
+      - name: claim_id
         description: "Unique identifier for the claim"
         tests:
           - unique
           - not_null
 
-      - name: Member_ID
+      - name: member_id
         description: "Unique identifier for the member associated with the claim"
         tests:
           - not_null
 
-      - name: Service_Date
+      - name: service_date
         description: "Date the service was provided"
         tests:
           - not_null
@@ -25,25 +25,25 @@ models:
               min_value: DATE '1900-01-01'
               max_value: DATE(CURRENT_DATE())
 
-      - name: Provider
+      - name: provider
         description: "Healthcare provider associated with the claim"
 
-      - name: Service_Code
+      - name: service_code
         description: "The billing code for the procedure performed"
 
-      - name: Amount_Billed
+      - name: amount_billed
         description: "Total amount billed by the provider"
         tests:
           - dbt_expectations.expect_column_values_to_be_of_type:
               column_type: FLOAT64
 
-      - name: Amount_Paid
+      - name: amount_paid
         description: "Total amount paid by the insurance"
         tests:
           - dbt_expectations.expect_column_values_to_be_of_type:
               column_type: FLOAT64
 
-      - name: Member_Out_Of_Pocket
+      - name: member_out_of_pocket
         description: "Amount the member had to pay out of pocket"
         tests:
           - dbt_expectations.expect_column_values_to_be_of_type:
@@ -52,8 +52,7 @@ models:
 #              name: test_positive_amounts
 ##          - test_positive_amounts
 
-
-      - name: Claim_Status
+      - name: claim_status
         description: "Current status of the claim (Completed, In Progress, Rejected)"
         tests:
           - accepted_values:

@@ -1,18 +1,18 @@
 WITH base AS (
     SELECT 
-        Claim_ID, 
-        Member_ID, 
-        Service_Date, 
-        Provider, 
-        Service_Code, 
-        Amount_Billed, 
-        Amount_Paid, 
-        (Amount_Billed - Amount_Paid) AS Member_Out_Of_Pocket,
+        claim_id,
+        member_id,
+        service_date,
+        provider,
+        service_code,
+        amount_billed,
+        amount_paid,
+        (amount_billed - amount_paid) as member_out_of_pocket,
         CASE 
-            WHEN Status = 'Paid' THEN 'Completed'
-            WHEN Status = 'Pending' THEN 'In Progress'
+            WHEN status = 'Paid' THEN 'Completed'
+            WHEN status = 'Pending' THEN 'In Progress'
             ELSE 'Rejected'
-        END AS Claim_Status
+        END AS claim_status
     FROM `bq-dbt-omni-demo.insurance_analytics_demo.claims_raw`
 )
 
