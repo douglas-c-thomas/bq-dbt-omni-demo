@@ -1,13 +1,15 @@
-# bq-dbt-omni-demo
+# Demo: BigQuery <-> dbt <-> Omni BI
 
 ## 📌 Introduction
-This repository is a **demo project showcasing dbt (Data Build Tool) with BigQuery**. The goal of this demo is to illustrate:
+This repository is a demo project showcasing how synthetic Claims data in **BigQuery** can be transformed by **dbt**
+(Data Build Tool) and power **Omni BI** dashboards for Claims analysis. The goal of this demo is to illustrate:
 - How to use **dbt for data transformation and modeling**.
 - How to implement **data validation and testing**.
 - How to **document models** and generate **interactive documentation**.
-- How to integrate **dbt workflows into a structured repository**.
+- How to integrate **Omni BI with BigQuery and dbt to turn data into information and information into knowledge**
 
-This demo is designed for **data engineers, analysts, and anyone looking to understand dbt workflows with BigQuery**.
+This demo is designed for data engineers, analysts, and anyone looking to understand how **Omni BI integrates with BigQuery
+via dbt workflows**.
 
 ---
 
@@ -102,7 +104,7 @@ This validates data integrity and schema compliance.
 dbt docs generate
 dbt docs serve
 ```
-Visit `http://localhost:8080/` to explore interactive dbt docs.
+Visit `https://douglas-c-thomas.github.io/bq-dbt-omni-demo/#!/model/model.insurance_analytics_demo.claims_transformed` to explore interactive dbt docs.
 
 ---
 
@@ -115,15 +117,3 @@ Visit `http://localhost:8080/` to explore interactive dbt docs.
   ```
 
 ---
-
-## 📌 **Next Steps**
-- ✅ Complete model transformations.
-- ✅ Implement testing with dbt Expectations.
-- 🔲 Fix and re-enable custom SQL test (`test_positive_amounts.sql`).
-- 🔲 Deploy docs to **GitHub Pages**.
-- 🔲 Integrate dbt with Omni BI.
-
----
-
-### **📢 Contributions**
-This is a demo project, but feel free to **fork and experiment**. If you have suggestions or improvements, open an issue!
