@@ -12,7 +12,7 @@ This repository is a demo project showcasing how synthetic Claims data in **BigQ
 This demo is designed for data engineers, analysts, and anyone looking to understand how **Omni BI integrates with BigQuery
 via dbt workflows**.
 
-[Claims Data Pipeline Walkthrough Video](https://github.com/douglas-c-thomas/bq-dbt-omni-demo/blob/main/Claims%20Data%20Pipeline%20Walkthrough.mp4)
+[Claims Data Pipeline Walkthrough Video](https://www.loom.com/share/96d42bb55d5a4cdea5aa5c7921fdc266?sid=4b83815b-5000-47d7-bdca-dfe37c71aab6)
 
 ---
 
