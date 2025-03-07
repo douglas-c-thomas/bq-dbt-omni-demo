@@ -1,5 +1,6 @@
 # Demo: BigQuery <-> dbt <-> Omni BI
 
+
 ## 📌 Introduction
 This repository is a demo project showcasing how synthetic Claims data in **BigQuery** can be transformed by **dbt**
 (Data Build Tool) and power **Omni BI** dashboards for Claims analysis. The goal of this demo is to illustrate:
@@ -11,13 +12,15 @@ This repository is a demo project showcasing how synthetic Claims data in **BigQ
 This demo is designed for data engineers, analysts, and anyone looking to understand how **Omni BI integrates with BigQuery
 via dbt workflows**.
 
+[Claims Data Pipeline Walkthrough Video](https://github.com/douglas-c-thomas/bq-dbt-omni-demo/blob/main/Claims%20Data%20Pipeline%20Walkthrough.mp4)
+
 ---
 
 ## 📂 Repository Structure
 The repository is organized as follows:
 
 ```
-bq-dbt-omni-demo/
+insurance_analytics_project/
 │── README.md                       # Project documentation
 │── dbt_project.yml                 # dbt project configuration
 │── packages.yml                    # dbt package dependencies
@@ -104,7 +107,7 @@ This validates data integrity and schema compliance.
 dbt docs generate
 dbt docs serve
 ```
-Visit `https://douglas-c-thomas.github.io/bq-dbt-omni-demo/#!/model/model.insurance_analytics_demo.claims_transformed` to explore interactive dbt docs.
+Visit the documentation in [GitHub Pages](https://douglas-c-thomas.github.io/bq-dbt-omni-demo/#!/model/model.insurance_analytics_demo.claims_transformed) to explore interactive dbt docs.
 
 ---
 
